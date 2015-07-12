@@ -1,0 +1,20 @@
+{
+  "name": "iamtesting",
+  "version": "0.1.0",
+
+  "dependencies": {
+    "lodash": "3.10.x"
+  },
+  "devDependencies": {
+    "babel": "5.6.x",
+    "expect.js": "0.3.x",
+    "jsdom": "3.1.x",
+    "mocha": "2.2.x",
+    "react": "0.13.x"
+  },
+
+  "scripts": {
+    "postinstall": "babel src --out-dir compiled/src --retain-lines && babel test --out-dir compiled/test --retain-lines",
+    "test": "npm run postinstall && mocha --recursive compiled/test"
+  }
+}
