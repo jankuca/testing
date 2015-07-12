@@ -2,6 +2,8 @@
   "name": "iamtesting",
   "version": "0.1.0",
 
+  "main": "src/index",
+
   "dependencies": {
     "lodash": "3.10.x"
   },
